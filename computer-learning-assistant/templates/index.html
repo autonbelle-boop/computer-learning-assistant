@@ -1,0 +1,36 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Learning Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Computer Learning Assistant</h1>
+    <p>Welcome! Let's learn how to use a computer step by step.</p>
+
+    <h2>Choose a Lesson</h2>
+
+    <button onclick="showLesson('basics')">Computer Basics</button>
+    <button onclick="showLesson('mouse')">Using a Mouse</button>
+    <button onclick="showLesson('keyboard')">Using a Keyboard</button>
+    <button onclick="showLesson('files')">Files and Folders</button>
+    <button onclick="showLesson('internet')">Using the Internet</button>
+
+    <div id="progress">
+        <h2>Your Learning Progress</h2>
+        <p id="progress-text">Lessons completed: 0 of 5</p>
+        <div id="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+    </div>
+
+    <div id="lesson"></div>
+    <div id="certificate-area"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

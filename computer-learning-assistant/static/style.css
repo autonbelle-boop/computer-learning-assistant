@@ -1,0 +1,113 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5fb;
+    color: #243247;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #174ea6;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #174ea6;
+    margin-top: 30px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 14px auto;
+    padding: 17px;
+    background-color: #ffffff;
+    color: #174ea6;
+    border: 2px solid #c9d9f2;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #174ea6;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+#lesson {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(30, 60, 100, 0.12);
+    text-align: left;
+    line-height: 1.7;
+}
+
+#lesson h2 {
+    margin-top: 0;
+}
+
+#lesson li {
+    margin-bottom: 12px;
+}
+
+#lesson p {
+    font-size: 17px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 24px 14px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    button {
+        box-sizing: border-box;
+    }
+}
+
+#progress {
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(30, 60, 100, 0.12);
+}
+
+#progress h2 {
+    margin-top: 0;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 18px;
+    background-color: #dce6f3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #174ea6;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
